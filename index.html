@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipos de préstamos</title>
+</head>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <script src="app.js"></script>
+    <div class="container mt-5">
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+         préstamos
+        </div>
+        <div class="card-body">
+          <form id="formulario">
+            <div class="form-group">
+              <label for="nombreAlumno">Nombre Cliente</label>
+              <input type="text" class="form-control" id="nombreAlumno" placeholder="Ingrese el nombre del Cliente">
+            </div>
+            <div class="form-group">
+              <label for="nota1">Hipotecario</label>
+              <input type="number" class="form-control" id="nota1" placeholder="Ingrese valor 1">
+            </div>
+            <div class="form-group">
+              <label for="nota2">automotriz</label>
+              <input type="number" class="form-control" id="nota2" placeholder="Ingrese valor 2">
+            </div>
+            <div class="form-group">
+              <label for="nota3">Consumo</label>
+              <input type="number" class="form-control" id="nota3" placeholder="Ingrese valor 3">
+            </div>
+            <button type="button" class="btn btn-success" onclick="guardar()">Guardar</button>
+            <button type="button" class="btn btn-primary" onclick="promCurso()">Resultado</button>
+            <button type="button" class="btn btn-info" onclick="promAlumno()">Resumen</button>
+          </form>
+        </div>
+      </div>
+       <br>
+
+         <p>Resumen: <span id="resultado"></span></p>
+    </div>
+
+  </body>
+  </html>
